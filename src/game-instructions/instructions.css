@@ -1,0 +1,40 @@
+.containerI {
+  max-width: 1280px;
+  margin: 10px 100px;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.imgContainer {
+  padding: 2rem;
+  align-items: center;
+}
+
+.imgContainer img{
+  width: 250px;
+  margin: 0;
+}
+
+.fraseContainer {
+  font-weight: 400;
+  text-align: justify;
+  color: #353535;
+  font-size: 1.2rem;
+}
+
+.tituloContainer {
+  font-weight: 400;
+  text-align: center;
+  color: #353535;
+  font-size: 1.4rem;
+}
+
+.descripcionContainer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: margin-top 0.5s ease;
+}
+
+
