@@ -1,0 +1,149 @@
+.landingPageContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    max-width: 1280px;
+    /*20px 100px;
+    padding: 4rem;
+    justify-content: space-between;*/
+    align-items: center;
+    display: flex;
+}
+
+.fContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgContainerL {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.imgContainerL img{
+    width: 1000px;
+    margin: 0;
+}
+
+.dotContainer {
+    margin-left: 150px;
+    align-items: center;
+}
+
+.aboutContainer {
+    height: 500px;
+    margin-left: 100px;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fraseContainerL {
+    background-color: #353535;
+    font-weight: 350;
+    padding: 5% 5%;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 80px;
+}
+
+.stairContainer{
+    align-items: center;
+    width: 250px;
+    margin: 0;
+}
+
+.sContainer {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.aboutContainer2 {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iniciarSesion {
+    width: auto;
+    height: auto;
+    border-radius: 100px;
+    margin-top: 0;
+    border: 1px solid transparent;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: inherit;
+    color: #999999;
+    background-color: #EBEBEB;
+    cursor: pointer;
+    transition: 0.25s;
+    border-color: #EBEBEB;
+    padding: 5%;
+}
+
+.iniciarSesion:hover {
+    color: #EBEBEB;
+    background-color: #999999;
+    transition: 0.5s;
+    border-color: #999999;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .aboutContainer {
+        margin-left: 50px;
+        margin: auto;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutContainer2 {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .imgContainerL {
+        margin-top: 100px;
+    }
+
+    .imgContainerL img{
+        width: 700px;
+    }
+
+    .fraseContainerL {
+        font-weight: 400;
+        padding: 5% 5%;
+        text-align: justify;
+        color: #fff;
+        font-size: 1.1rem;
+        border-radius: 80px;
+    }
+
+    .stairContainer img{
+        width: 200px;
+    }
+
+    .iniciarSesion {
+        align-items: center;
+    }
+
+    .dotContainer {
+        margin: auto;
+    }
+
+    .dotContainer2 {
+        margin: auto;
+    }
+}

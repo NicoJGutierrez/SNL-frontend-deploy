@@ -1,0 +1,12 @@
+/* #root {
+    max-width: 1280px;
+    margin: 20px 100px;
+    padding: 2rem;
+    text-align: left;
+  } */
+  
+.toplane{
+    display: flex;
+    justify-content: center; 
+    align-items: center
+}
