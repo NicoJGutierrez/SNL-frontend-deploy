@@ -19,10 +19,14 @@
     width: 50px;
     margin: 0;
 }
-.logoContainer p {
-    color: #404040;
+.logoContainer a {
+    color: #444;
     font-weight: 500;
     font-size: 2rem;
+}
+
+.logoContainer a:hover {
+    color: #fff;
 }
 
 .menu {

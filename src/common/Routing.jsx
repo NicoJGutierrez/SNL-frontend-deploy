@@ -11,6 +11,15 @@ import AdminCheck from "../protected/AdminCheck.jsx"
 import Inicio from "../game-page/inicio.jsx"
 import Ranklist from "../game-instructions/RankingJugadores.jsx"
 import DeployPartidas from "../game-page/deploy-partidas.jsx"
+import DeployCarta from "../admin/cards.jsx"
+import DeployUsuario from "../admin/users.jsx"
+import SearchUsuario from "../admin/search-user.jsx"
+import SearchCarta from "../admin/search-card.jsx"
+import DeployUsuarios from "../admin/deploy-users.jsx"
+import EditUsuario from "../admin/edit-user.jsx"
+import CreateCard from "../admin/create-card.jsx"
+import DeployCards from "../admin/deploy-cards.jsx"
+import EditCard from "../admin/edit-card.jsx"
 
 
 function Routing() {
@@ -30,6 +39,15 @@ function Routing() {
                 <Route path={'/inicio'} element={<Inicio/>}/>
                 <Route path={'/ranking'} element={<Ranklist/>}/>
                 <Route path={'/games'} element={<DeployPartidas/>}/>
+                <Route path={'/adminCards/:id_carta'} element={<DeployCarta/>}/>
+                <Route path={'/adminUser/:id_usuario'} element={<DeployUsuario/>}/>
+                <Route path={'/searchUser'} element={<SearchUsuario/>}/>
+                <Route path={'/searchCard'} element={<SearchCarta/>}/>
+                <Route path={'/users'} element={<DeployUsuarios/>}/>
+                <Route path={'/editUser/:id_usuario'} element={<EditUsuario/>}/>
+                <Route path={'/editCard/:id_carta'} element={<EditCard/>}/>
+                <Route path={'/createCard'} element={<CreateCard/>}/>
+                <Route path={'/cards'} element={<DeployCards/>}/>
              </Routes>
         </BrowserRouter>
 

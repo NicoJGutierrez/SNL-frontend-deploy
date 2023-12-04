@@ -16,6 +16,7 @@ function CharSelect() {
     const { id_partida } = useParams();
     const [userID, setUserID] = useState(null);
     const [players, setPlayers] = useState(null);
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
         axios({
@@ -26,18 +27,19 @@ function CharSelect() {
             }
         }).then(response => {
             setUserID(response.data.user.sub);
+            setUser(true);
           })
     })
 
     useEffect(() => {
         axios.get(`${import.meta.env.VITE_BACKEND_URL}/players/${id_partida}`)
             .then(response => {
-                let i = 0;
+                //let i = 0;
                 const jugadores = [];
                 const data = response.data;
                 data.map((player) => {
                     jugadores.push(player.personaje);
-                    i = i + 1
+                    //i = i + 1
                 })
                 console.log(jugadores);
                 setPlayers(jugadores);
@@ -135,14 +137,29 @@ function CharSelect() {
     return(
     <>
     <nav className='nav'>
-            <Navbar />
-        </nav> 
-    <h1> ELIGE TU PERSONAJE </h1>
-    <div className="pagecontainer">
-        <div className="toplane1">
-            {renderPlayers()}
+         <Navbar />
+    </nav> 
+    {user ? (
+        <>
+            <h1> ELIGE TU PERSONAJE </h1>
+            <div className="pagecontainer">
+                <div className="toplane1">
+                    {renderPlayers()}
+                </div>
+            </div>
+        </>
+    ): (
+        <div className='Redirigir'>
+            <h2>No tienes autorización para poder estar en esta página</h2>
+            <div className='redirigir'>
+                <a style={{ display: 'inline-block' }} href='/login'>Inicia sesión</a>
+                <p style={{ display: 'inline-block' }}>o</p>
+                <a style={{ display: 'inline-block' }} href='/login'>registrate</a>
+                <p style={{ display: 'inline-block' }}>para poder desbloquear todo el contenido de la ruta del crimen :)</p>
+            </div>
         </div>
-    </div>
+    )}
+    
     </>
     )
 }

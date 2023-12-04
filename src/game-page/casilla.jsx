@@ -2,12 +2,11 @@ import "./tablero.css";
 import PropTypes from 'prop-types';
 
 function Casilla({color, numero, personajes}) {
-    //console.log(numero)
 
     return(
     <>
     <div key = {"c" + numero} className = {color}>
-        {numero}{personajes}{console.log(numero)}
+        {numero}{personajes}
     </div>
     </>
     )

@@ -27,7 +27,7 @@ function Tablero({altura, ancho}) {
         lista_de_casillas.push(<div key={"f" + i} className="row">{fila}</div>)
         //console.log("f" + i)
     }
-    console.log("Total casillas: " + logs)
+    //console.log("Total casillas: " + logs)
 
     return(
     <>

@@ -25,17 +25,14 @@ function Instructions() {
             <div className='fraseContainer'><h2>Desarrollo del juego</h2></div>
             
             <div className='fraseContainer'>
-            <p> Cada jugador estará representado por una ficha en el tablero y comenzará con una cantidad 
-                de dinero inicial. </p>
+            <p> Cada jugador estará representado por una ficha en el tablero y comenzará en la casilla inicial. </p>
             </div>
             <div className='fraseContainer'>
-            <p> El primer jugador en unirse al juego tendrá el primer turno. Luego de que el primer 
-                jugador haya completado su turno, el segundo jugador que se una será el siguiente en 
-                jugar, y así sucesivamente. </p>
+            <p> El usuario en comenzar el juego será el que haya escogido al jugador 1, luego continuará el 
+                jugador 2 y así sucesivamente. </p>
             </div>
             <div className='fraseContainer'>
-            <p> En cada turno, los jugadores roban una carta del mazo y deciden qué hacer con ella. Pueden 
-                jugarla, subastarla o usar el mercado negro. </p>
+            <p> En cada turno, los jugadores roban una carta del mazo la cual indicará cuantas casillas deben avanzar o retroceder.</p>
             </div>
 
             <div className='descripcionContainer'>
@@ -44,12 +41,8 @@ function Instructions() {
 
             <div className='descripcionContainer'>
             <div className='fraseContainer'>
-            <p> Una vez resuelta la acción con la carta, sus efectos se aplican al jugador que la tenga, ya 
-                sea por juego, subasta o mercado negro. </p>
-            </div>
-            <div className='fraseContainer'>
-            <p> Antes de finalizar su turno, el jugador puede optar por pagar al banco para robar otra carta 
-                o decidir terminar su turno. </p>
+            <p> Antes de finalizar su turno, si el jugador cayó en una casilla especial (escalera o serpiente)
+                se moverá "a través" de esta y quedará en la casilla final correspondiente. </p>
             </div>
             <div className='fraseContainer'>
             <p> El juego continúa hasta que alguien llega al final del tablero. El jugador que llegue 

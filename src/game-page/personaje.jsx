@@ -13,13 +13,13 @@ function Personaje({nombre, src, descripcion, personaje, userID, gameID, nueva_p
             axios.put(`${import.meta.env.VITE_BACKEND_URL}/games/num_jugadores/${gameID}`)
             .then((response) => {
                 console.log("actualización numero jugadores exitosos!");
-                axios.get(`${import.meta.env.VITE_BACKEND_URL}/games/${Number(gameID)}`)
-                .then((res) => {
-                    const gameInfo = res.data;
-                    if (gameInfo.num_jugadores == 4) {
-                        axios.put(`${import.meta.env.VITE_BACKEND_URL}/games/num_jugadores/${gameID}`)
-                    }
-                })
+                //axios.get(`${import.meta.env.VITE_BACKEND_URL}/games/${Number(gameID)}`)
+                //.then((res) => {
+                    //const gameInfo = res.data;
+                    //if (gameInfo.num_jugadores == 4) {
+                        //axios.put(`${import.meta.env.VITE_BACKEND_URL}/games/num_jugadores/${gameID}`)
+                    //}
+                //})
             }).catch((error) => {
                 console.error("Ocurrió un error al intentar actualizar el numero de jugadores:", error)  
             })
