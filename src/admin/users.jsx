@@ -64,7 +64,7 @@ function DeployUsuario() {
             .then((response) => {
                 const players = response.data;
                 players.map((player) => {
-                    instance2.delete(`${import.meta.env.VITE_BACKEND_URL}/players/${player.id}`)
+                    instance.delete(`${import.meta.env.VITE_BACKEND_URL}/players/${player.id}`)
                 })
                 axios({
                     method: 'delete',
