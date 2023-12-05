@@ -73,13 +73,6 @@ export default function Navbar() {
                     {user ? (
                         <>
                         <li className='menuItem'>
-                            <a className='menuItemLink' href='/login' onClick={() => setShowMobilMenu(!showMobileMenu)}>
-                                <div>
-                                Jugar
-                                </div>
-                            </a>
-                        </li>
-                        <li className='menuItem'>
                             <a className='menuItemLink' href='/ranking' onClick={() => setShowMobilMenu(!showMobileMenu)}>
                                 <div>
                                 Ranking

@@ -19,12 +19,6 @@ function DeployUsuario() {
         },
     });
 
-    const instance2 = axios.create({
-        headers: {
-          Authorization: `Bearer ${import.meta.env.TOKEN}`,
-        },
-    });
-
     useEffect(() => {
         instance.get(`${import.meta.env.VITE_BACKEND_URL}/scope/protectedadmin`)
         .then(response => {

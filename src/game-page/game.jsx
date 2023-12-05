@@ -57,18 +57,6 @@ function Game() {
                         cartas.push({"id": card.id, "tipo": card.tipo, "redireccion": data.data.redireccion, "descripcion": data.data.descripcion});
                         i = i + 1;
                     })
-                } else if (card.tipo == "Ingreso") {
-                    axios.get(`${import.meta.env.VITE_BACKEND_URL}/earnings/${card.id}`)
-                    .then((data) => {
-                        cartas.push({"id": card.id, "tipo": card.tipo, "monto": data.data.monto, "descripcion": data.data.descripcion});
-                        i = i + 1;
-                    })
-                } else if (card.tipo == "Perdida") {
-                    axios.get(`${import.meta.env.VITE_BACKEND_URL}/losses/${card.id}`)
-                    .then((data) => {
-                        cartas.push({"id": card.id, "tipo": card.tipo, "monto": data.data.monto, "descripcion": data.data.descripcion});
-                        i = i + 1;
-                    })
                 }
             });
             // console.log(cartas);
